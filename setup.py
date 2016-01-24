@@ -16,6 +16,11 @@ setup(name='py-hello-world',
       packages=['py_hello_world'],
       #packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
       install_requires=[],
+      entry_points={
+        'console_scripts': [
+        'say_something=py_hello_world.say_something:run',
+        ],
+      },
      )
 
 
